@@ -1,0 +1,100 @@
+p {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 800px;
+  margin-left: 60px;
+}
+p {
+    text-align: left;
+}
+h2 {
+  text-align: center;
+  color: rgb(214, 17, 116);
+  font-family: 	Courier New, Courier, monospace;
+}
+h3 {
+  text-align: center;
+  color: violet;
+  font-family: Courier New, Courier, monospace;
+    font-size: 24px; 
+}
+b {
+    color : slateblue;
+    font-size: 20px;
+}
+li {
+    color : DodgerBlue;
+    font-family: Courier New, Courier, monospace;
+    font-size: 16px;
+}
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  margin: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+}
+
+.gallery img {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img:hover {
+  transform: scale(1.15);
+}
+table {
+  border-collapse: collapse;         /* เอาเส้นขอบชิดกัน */
+  width: 100%;                       /* ตารางกว้างเต็มพื้นที่ */
+  table-layout: fixed;              /* แบ่งคอลัมน์เท่า ๆ กัน */
+}
+
+th, td {
+  border: 1px solid #333;           /* เส้นขอบ */
+  padding: 8px;
+  text-align: center;
+  height: 30px;                     /* ความสูงของแต่ละเซลล์ */
+  word-wrap: break-word;           /* ตัดคำเมื่อข้อความยาว */
+  font-size: 14px;                 /* ขนาดตัวอักษร */
+}
+table tr:nth-child(1) {
+  background-color: #e8e7e7;         /* แถวคี่พื้นหลังสีเทาอ่อน */
+}
+td.monday-label {
+  background-color: yellow;
+}
+td.tuesday-label {
+  background-color: rgb(245, 147, 245);
+}
+td.wednesday-label {
+  background-color: greenyellow;
+}
+td.thursday-label {
+  background-color: orange;
+}
+td.friday-label {
+  background-color: lightblue;
+}
+td.monday-subject{
+    background-color: yellow;
+}
+td.tuesday-subject{
+    background-color: rgb(245, 147, 245);
+}
+td.wednesday-subject{
+    background-color: greenyellow;
+}
+td.thursday-subject{
+    background-color: orange;
+}
+td.friday-subject{
+    background-color: lightblue;
+}
