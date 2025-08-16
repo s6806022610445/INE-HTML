@@ -148,3 +148,64 @@ input[type="tel"] {
   border-radius: 5px;
   box-sizing: border-box; /* ป้องกัน padding ทำให้ขนาดเกิน */
 }
+
+
+@media (max-width: 768px) {
+.main {
+  flex-direction: column;
+}
+
+.content, .sidebar {
+  width: 100%;
+  order: unset;
+}
+
+.sidebar {
+  padding: 10px;
+}
+
+.Images {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+.int-button input[type="submit"],
+.int-button input[type="reset"] {
+  width: 100%;
+}
+
+.int-button {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.topnav {
+  flex-direction: column;
+  height: auto;
+  align-items: flex-start;
+}
+
+.topnav a {
+  padding: 8px;
+  width: 100%;
+}
+
+.search-container {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.search-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.search-container input[type="search"],
+.search-container button {
+  width: 100%;
+}
+}
