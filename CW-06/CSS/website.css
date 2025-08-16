@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    margin: 0;
+}
+.Header {
+    padding: 60px;
+    text-align: center;
+    background: #df96e6;
+    color: white;
+}
+.topnav {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 5px;
+    height: 50px;
+}
+.topnav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.topnav .search-container {
+    margin-left: auto;
+}
+.topnav input[type="search"] {
+  padding: 5px;
+  height: 35px;        /* ความสูงของช่อง */
+  padding: 10px;       /* ระยะห่างภายใน */
+  font-size: 16px;     /* ขนาดตัวอักษร */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.topnav button {
+  padding: 6px 10px;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+}
+.main {
+    display: flex;
+}
+.content {
+    width: 85%;
+    flex: 1;
+    padding: 20px;
+    order: 1;
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #80f68c;
+}
+table {
+  border-collapse: collapse;         /* เอาเส้นขอบชิดกัน */
+  width: 100%;                       /* ตารางกว้างเต็มพื้นที่ */
+  height: 300px;                      /* ตารางสูงเต็มพื้นที่ */
+}
+.sidebar {
+      width: 15%;
+      background: rgb(239, 182, 90);
+      padding: 15px;
+      order: 2;
+}
+.sidebar a {
+      display: block;
+      background: black;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background: #333;
+}
+.Images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 4px
+}
+.Images img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.search-container button {
+    padding: 5px 10px;
+    background: magenta;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 35px;        /* ความสูงของช่อง */
+    font-size: 16px;     /* ขนาดตัวอักษร */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.int-button {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start; 
+}
+.int-button input[type="submit"],
+.int-button input[type="reset"] {
+  width: 45%;
+  height: 35px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+input[type="submit"] {
+  background-color: #4CAF50;
+}
+input[type="reset"] {
+  background-color: #f44336;
+}
+.reg-button:hover {
+  background-color: #45a049;
+}
+.can-button:hover {
+  background-color: #d32f2f;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+  width: 45%;         /* ให้กว้างเต็มพื้นที่ที่มี */
+  height: 35px;        /* ความสูงของช่อง */
+  padding: 10px;       /* ระยะห่างภายใน */
+  font-size: 16px;     /* ขนาดตัวอักษร */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* ป้องกัน padding ทำให้ขนาดเกิน */
+}
