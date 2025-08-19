@@ -29,13 +29,13 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-.side {
-    flex: 30%;
+.slide {
+    flex: 20%;
     background-color: #f1f1f1;
     padding: 20px;
 }
 .main {
-    flex: 70%;
+    flex: 80%;
     background-color: white;
     padding: 20px;
 }
